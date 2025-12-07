@@ -1,0 +1,10 @@
+^D:\PROJECTS_\QINGHUA_PROJECT\基于光学特征分类\CPP\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe -SD:/Projects_/Qinghua_Project/基于光学特征分类/CPP -BD:/Projects_/Qinghua_Project/基于光学特征分类/CPP/build --check-stamp-file D:/Projects_/Qinghua_Project/基于光学特征分类/CPP/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
